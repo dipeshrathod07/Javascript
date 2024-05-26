@@ -1,5 +1,4 @@
-age = 24;
-// fullName = "Dipesh Rathod";
-// radius = 14.2;
-// x = null;
-// y = undefined;
+for(let i = 0 ; i < city.length ; i++)
+//     {
+//         console.log(city[i]);
+//     }
