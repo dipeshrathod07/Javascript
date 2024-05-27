@@ -5,6 +5,11 @@
 // y = undefined;
 
 
+//The declration is done by three kind ;
+//var v1 = 21;
+//let v2 = 22;
+// const v3 = 23;
+
 const student ={
     name : "Dipesh Rathod",
     age : 21, 
