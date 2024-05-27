@@ -255,9 +255,6 @@ let arr = [1,2,3,4,5,6,7];
         return a+b;
     }
 
-    console.log(arrowsum(5,2));
-
-
     //Practise question to count the number of vowel in a particular string;
 
     function countVowel(str)
@@ -276,3 +273,41 @@ let arr = [1,2,3,4,5,6,7];
             return count;
     } 
 
+
+    //* for each method ; NOTE: It is higher order function are function which take function either as parameter or return function;
+
+  //  callbackfunction : It is a function to execute each element in array
+
+    // arr.forEach(callbackfn: (value: number, index: number, array: number[]) => {};
+      let calculate = (value) =>
+        {
+            console.log(value);
+        };
+    arr.forEach((calculate));
+
+
+    //* map method : this is same as for each method but minor difference is that it can store the value in new array;
+
+  let newarr =  arr.map((val) =>{
+        return val*2;
+    });
+
+
+    //* filter method: creates a new array of element that gives true condition/filter;
+
+    let newarr1 = arr.filter((val) => {
+            return val % 2 === 0;
+    });
+
+
+    //*reduce method : perform with a particular operation and reduce array to a single value. It returns that single value;
+
+    const output =arr.reduce((res,curr) => 
+        {
+            return res+curr;
+        });
+        
+        const output1 =arr.reduce((prev,curr) => 
+            {
+                return prev < curr?prev:curr;
+            });
