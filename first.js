@@ -5,11 +5,6 @@
 // y = undefined;
 
 
-//The declration is done by three kind ;
-//var v1 = 21;
-//let v2 = 22;
-// const v3 = 23;
-
 const student ={
     name : "Dipesh Rathod",
     age : 21, 
@@ -151,19 +146,18 @@ else{
 //     }
 
 
-// let numbers = 25;
-// let guessnumber = prompt("Guess the number:");
+let numbers = 25;
+let guessnumber = prompt("Guess the number:");
 
-// while(numbers != guessnumber)
-//     {
-//         console.log("You guessed the right number");
-//     }
+while(numbers != guessnumber)
+    {
+        guessnumber = prompt("Wrong answer! Try again:");
 
-//     console.log("Wrong guess");
+    }
 
+    console.log("You  guessed the right one");
 
-
-    //* Strings
+ //* Strings
 
     // let str = "Dipeshrathod";
     // console.log(str[0]);
@@ -314,5 +308,7 @@ let arr = [1,2,3,4,5,6,7];
         
         const output1 =arr.reduce((prev,curr) => 
             {
-                return prev > curr?prev:curr;
+                return prev < curr?prev:curr;
             });
+
+    
